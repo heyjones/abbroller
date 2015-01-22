@@ -1,0 +1,10 @@
+abbr.abbroller{
+	border: none;
+	cursor: auto;
+}
+	abbr.abbroller:before{
+		content: attr(title);
+	}
+		abbr.abbroller > span{
+			display: none;
+		}

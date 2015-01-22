@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Abbroller</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/abbroller.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Abbroller</h1>
+				<p class="lead">A responsive extension for the native &lt;abbr&gt; tag</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<p>This plugin will automatically modify how &lt;abbr&gt; content is displayed based on the length of the string and the width of the container. Below is a (honestly terrible) example of how this thing works... I think it took me longer to organize all of the states in this table than it did to write the damn thing.</p>
+			<h2>United States</h2>
+			<table class="table table-abbroller">
+				<thead>
+					<tr>
+						<th>A - G</th>
+						<th>H - M</th>
+						<th>M - N</th>
+						<th>N - S</th>
+						<th>S - W</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><abbr title="Alabama">AL</abbr></td>
+						<td><abbr title="Hawaii">HI</abbr></td>
+						<td><abbr title="Massachusetts">MA</abbr></td>
+						<td><abbr title="New Mexico">NM</abbr></td>
+						<td><abbr title="South Dakota">SD</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="Alaska">AK</abbr></td>
+						<td><abbr title="Idaho">ID</abbr></td>
+						<td><abbr title="Michigan">MI</abbr></td>
+						<td><abbr title="New York">NY</abbr></td>
+						<td><abbr title="Tennessee">TN</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="Arizona">AZ</abbr></td>
+						<td><abbr title="Illinois">IL</abbr></td>
+						<td><abbr title="Minnesota">MN</abbr></td>
+						<td><abbr title="North Carolina">NC</abbr></td>
+						<td><abbr title="Texas">TX</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="Arkansas">AR</abbr></td>
+						<td><abbr title="Indiana">IN</abbr></td>
+						<td><abbr title="Mississippi">MS</abbr></td>
+						<td><abbr title="North Dakota">ND</abbr></td>
+						<td><abbr title="Utah">UT</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="California">CA</abbr></td>
+						<td><abbr title="Iowa">IA</abbr></td>
+						<td><abbr title="Missouri">MO</abbr></td>
+						<td><abbr title="Ohio">OH</abbr></td>
+						<td><abbr title="Vermont">VT</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="Colorado">CO</abbr></td>
+						<td><abbr title="Kansas">KS</abbr></td>
+						<td><abbr title="Montana">MO</abbr></td>
+						<td><abbr title="Oklahoma">OK</abbr></td>
+						<td><abbr title="Virginia">VA</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="Connecticut">CT</abbr></td>
+						<td><abbr title="Kentucky">KY</abbr></td>
+						<td><abbr title="Nebraska">NE</abbr></td>
+						<td><abbr title="Oregon">OR</abbr></td>
+						<td><abbr title="Washington">WA</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="Delaware">DE</abbr></td>
+						<td><abbr title="Louisiana">LA</abbr></td>
+						<td><abbr title="Nevada">NV</abbr></td>
+						<td><abbr title="Pennsylvania">PA</abbr></td>
+						<td><abbr title="West Virginia">WV</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="Florida">FL</abbr></td>
+						<td><abbr title="Maine">ME</abbr></td>
+						<td><abbr title="New Hampshire">NH</abbr></td>
+						<td><abbr title="Rhode Island">RI</abbr></td>
+						<td><abbr title="Wisconsin">WI</abbr></td>
+					</tr>
+					<tr>
+						<td><abbr title="Georgia">GA</abbr></td>
+						<td><abbr title="Maryland">MD</abbr></td>
+						<td><abbr title="New Jersey">NJ</abbr></td>
+						<td><abbr title="South Carolina">SC</abbr></td>
+						<td><abbr title="Wyoming">WI</abbr></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/abbroller.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.table-abbroller').abbroller();
+			});
+		</script>
+	</body>
+</html>
